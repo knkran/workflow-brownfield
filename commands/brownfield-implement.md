@@ -1,6 +1,14 @@
+---
+description: Continue to implementation phase (requires completed analysis)
+argument-hint: "[feature-name]"
+allowed-tools: Bash(git:*), Bash(npm:*), Read, Write, Edit, Glob, Grep, Task, TodoWrite, AskUserQuestion, EnterPlanMode, ExitPlanMode
+---
+
 # Brownfield Implementation Phase
 
-This skill handles the implementation phase of the brownfield development workflow.
+This command handles the implementation phase of the brownfield development workflow.
+
+**Feature to implement**: $ARGUMENTS
 
 ## Prerequisites
 
@@ -12,7 +20,7 @@ Before running this phase:
 
 ## Instructions
 
-When this skill is invoked, follow these steps:
+Follow these steps:
 
 ### Step 1: Load Analysis
 
@@ -96,8 +104,8 @@ Plan: .claude/docs/plan-[feature].md
 ...
 
 ### Execution Order
-1. Task 1: Tests → Implementation → Verify
-2. Task 2: Tests → Implementation → Verify
+1. Task 1: Tests -> Implementation -> Verify
+2. Task 2: Tests -> Implementation -> Verify
 ...
 Final: Code Review
 

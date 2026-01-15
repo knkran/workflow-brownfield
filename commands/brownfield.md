@@ -1,6 +1,14 @@
+---
+description: Start the complete brownfield workflow (analysis + implementation)
+argument-hint: "<feature or task description>"
+allowed-tools: Bash(git:*), Bash(npm:*), Read, Write, Edit, Glob, Grep, Task, TodoWrite, AskUserQuestion, EnterPlanMode, ExitPlanMode
+---
+
 # Brownfield Development Workflow
 
 A structured workflow for brownfield development supporting both well-defined user stories and ad-hoc tasks (like library upgrades).
+
+**Feature to implement**: $ARGUMENTS
 
 ## Overview
 
@@ -16,12 +24,11 @@ This workflow guides you through two main phases:
 
 First, determine the type of work:
 
-<question>
-**What type of task are you working on?**
+Use AskUserQuestion to ask: **What type of task are you working on?**
 
+Options:
 1. **User Story** - I have a well-defined user story from the Product Owner
 2. **Ad-hoc Task** - Library upgrade, tech debt, or undefined task
-</question>
 
 **If User Story selected:**
 Ask the user to paste the complete user story including:
@@ -149,10 +156,9 @@ Task tool with subagent_type: "workflow-brownfield:review-agent"
 
 ## Workflow Commands
 
-- `/brownfield` - Start the brownfield workflow
+- `/brownfield` - Start the brownfield workflow (this command)
 - `/brownfield-analysis` - Run only the analysis phase
 - `/brownfield-implement` - Continue to implementation (requires completed analysis)
-- `/brownfield-status` - Check current workflow status
 
 ---
 

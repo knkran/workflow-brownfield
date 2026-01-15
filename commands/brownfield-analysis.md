@@ -1,10 +1,18 @@
+---
+description: Run only the analysis phase of brownfield workflow
+argument-hint: "<feature or task description>"
+allowed-tools: Bash(git:*), Read, Write, Edit, Glob, Grep, Task, TodoWrite, AskUserQuestion
+---
+
 # Brownfield Analysis Phase
 
-This skill handles the analysis phase of the brownfield development workflow.
+This command handles the analysis phase of the brownfield development workflow.
+
+**Task to analyze**: $ARGUMENTS
 
 ## Instructions
 
-When this skill is invoked, follow these steps exactly:
+Follow these steps exactly:
 
 ### Step 1: Determine Task Type
 
