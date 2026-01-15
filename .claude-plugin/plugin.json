@@ -1,0 +1,10 @@
+{
+  "name": "workflow-brownfield",
+  "version": "1.0.1",
+  "description": "Structured brownfield development workflow with TDD support for user stories and ad-hoc tasks",
+  "author": {
+    "name": "kriand"
+  },
+  "keywords": ["brownfield", "tdd", "workflow", "gherkin", "development"],
+  "repository": "https://github.com/knkran/workflow-brownfield"
+}
