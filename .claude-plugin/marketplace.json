@@ -1,7 +1,5 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "workflow-brownfield",
-  "description": "Structured brownfield development workflow with TDD support for user stories and ad-hoc tasks",
   "owner": {
     "name": "kriand"
   },
@@ -9,13 +7,7 @@
     {
       "name": "workflow-brownfield",
       "description": "Structured brownfield development workflow with TDD support for user stories and ad-hoc tasks",
-      "version": "1.0.1",
-      "author": {
-        "name": "kriand"
-      },
-      "source": ".",
-      "category": "development",
-      "keywords": ["brownfield", "tdd", "workflow", "gherkin", "development"]
+      "source": "."
     }
   ]
 }
