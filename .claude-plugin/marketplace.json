@@ -7,7 +7,7 @@
     {
       "name": "workflow-brownfield",
       "description": "Structured brownfield development workflow with TDD support for user stories and ad-hoc tasks",
-      "source": "."
+      "source": "./"
     }
   ]
 }
